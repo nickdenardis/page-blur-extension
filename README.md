@@ -1,6 +1,6 @@
-# Page Blur
+# Blur entire page
 
-A minimal Chrome extension that lets you blur any web page with a slider. Useful for hiding sensitive content on-screen while screen sharing, presenting, or recording.
+A minimal Chrome extension that lets you blur any web page with a slider. Useful for obstructing the content of a page to visualize the shape and where visitor's eyes focus first.
 
 ## Features
 
@@ -8,15 +8,6 @@ A minimal Chrome extension that lets you blur any web page with a slider. Useful
 - **Persistent per tab** — blur stays active as you navigate and refresh within the same tab. It clears automatically when the browser is closed or the tab is closed.
 - **Reset button** — the ✕ button in the popup removes the blur instantly.
 - **Settings page** — right-click the extension icon → *Options* to open the About / attribution page.
-
-## Installing (unpacked)
-
-1. Clone or download this repository.
-2. Open Chrome and go to `chrome://extensions`.
-3. Enable **Developer mode** (toggle in the top-right corner).
-4. Click **Load unpacked** and select the `page-blur` folder.
-
-The extension is now active. Pin it to your toolbar for easy access.
 
 ## Development
 
@@ -48,6 +39,36 @@ The PNG icons in `icons/` are generated from `noun-blur-on-4180752.svg` using [s
 
 ```bash
 npm run generate-icons
+```
+
+## Building extension
+
+### Update the CHANGELOG.md
+
+Make sure git-cliff is installed
+`brew install git-cliff`
+
+On release branch, with the version bump:
+`{$version}` = version number about to be released
+
+```bash
+git add .
+git commit -m "fix: Title of fix"
+git cliff --unreleased --tag {$version} --prepend CHANGELOG.md
+git add .
+git commit --amend
+```
+
+### Firefox package
+
+```bash
+$ zip -r -FS ../blur-entire-page.zip * -x "*.git/*" "node_modules/*" "tests/*"
+```
+
+### Chrome package
+
+```bash
+$ zip -r ../blur-entire-page.zip * -x "*.git/*" "node_modules/*" "tests/*"
 ```
 
 ### Project structure

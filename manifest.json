@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Page Blur",
+  "name": "Blur entire page",
   "version": "1.0.0",
   "description": "Blur any web page with a simple slider. Blur persists as you navigate within the same tab.",
 
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Page Blur",
+    "default_title": "Blur Page",
     "default_icon": {
       "16":  "icons/icon-16.png",
       "48":  "icons/icon-48.png",
