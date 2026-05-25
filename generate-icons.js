@@ -1,6 +1,3 @@
-// ABOUTME: One-time script to generate PNG extension icons from the SVG source.
-// ABOUTME: Run with `npm run generate-icons` to produce icons/icon-{16,48,128}.png.
-
 import sharp from 'sharp';
 import { mkdirSync } from 'fs';
 

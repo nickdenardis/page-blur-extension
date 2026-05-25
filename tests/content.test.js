@@ -1,6 +1,3 @@
-// ABOUTME: Tests for content.js — blur application and message handling.
-// ABOUTME: Verifies CSS filter is set/cleared correctly and that messages are dispatched.
-
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 
 // content.js registers listeners at module load time, so we need to capture

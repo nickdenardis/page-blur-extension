@@ -1,6 +1,3 @@
-// ABOUTME: Service worker that tracks per-tab blur state across page navigations.
-// ABOUTME: Responds to content script queries and cleans up state when tabs close.
-
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type !== 'getBlur') return false;
 

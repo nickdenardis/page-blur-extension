@@ -1,6 +1,3 @@
-// ABOUTME: Shared test setup: installs a minimal Chrome extension API mock.
-// ABOUTME: Covers storage.session, tabs, runtime, and action APIs used by this extension.
-
 import { vi } from 'vitest';
 
 const storageData = {};

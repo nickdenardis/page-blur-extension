@@ -1,6 +1,3 @@
-// ABOUTME: Controls the popup UI: reads blur state for the active tab, updates on slider input.
-// ABOUTME: Exports init() so it can be called by the popup HTML and tested independently.
-
 export async function init() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   const tabId = tab.id;

@@ -1,6 +1,3 @@
-// ABOUTME: Tests for background.js — per-tab blur state management.
-// ABOUTME: Verifies getBlur responses and tab cleanup on close.
-
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 
 let messageListener;

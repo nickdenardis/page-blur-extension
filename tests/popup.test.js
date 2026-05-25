@@ -1,6 +1,3 @@
-// ABOUTME: Tests for popup.js — UI initialisation, slider interaction, and reset.
-// ABOUTME: Sets up a minimal DOM and exercises the exported init() function.
-
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 
 const SLIDER_HTML = `
