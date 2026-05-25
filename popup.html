@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- ABOUTME: Popup HTML for the Page Blur extension. -->
+<!-- ABOUTME: Renders the blur slider and reset button, then calls init(). -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="range"
+        id="blur-slider"
+        min="0"
+        max="10"
+        step="0.5"
+        value="0"
+        aria-label="Blur amount"
+      />
+      <button id="reset-btn" title="Reset blur" aria-label="Reset blur">&#x2715;</button>
+    </div>
+    <script type="module">
+      import { init } from './popup.js';
+      init();
+    </script>
+  </body>
+</html>
