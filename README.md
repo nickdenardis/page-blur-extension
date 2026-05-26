@@ -9,6 +9,10 @@ A minimal Chrome extension that lets you blur any web page with a slider. Useful
 - **Reset button** — the ✕ button in the popup removes the blur instantly.
 - **Settings page** — right-click the extension icon → *Options* to open the About / attribution page.
 
+## Demo
+
+![Visualization of the extension in use](assets/page-blur.gif)
+
 ## Development
 
 ### Prerequisites
@@ -62,13 +66,13 @@ git commit --amend
 ### Firefox package
 
 ```bash
-$ zip -r -FS ../blur-entire-page.zip * -x "*.git/*" "node_modules/*" "tests/*"
+$ zip -r -FS ../blur-entire-page.zip * -x "*.git/*" "node_modules/*" "tests/*" "assets/*"
 ```
 
 ### Chrome package
 
 ```bash
-$ zip -r ../blur-entire-page.zip * -x "*.git/*" "node_modules/*" "tests/*"
+$ zip -r ../blur-entire-page.zip * -x "*.git/*" "node_modules/*" "tests/*" "assets/*"
 ```
 
 ### Project structure
